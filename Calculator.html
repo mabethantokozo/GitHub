@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wing Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wing-calculator">
+      <h1>Wing Calculator</h1>
+      <div class="input-fields">
+        <label for="wingSpan">Wing Span (m):</label>
+        <input type="number" id="wingSpan" />
+        <label for="chordLength">Chord Length (m):</label>
+        <input type="number" id="chordLength" />
+        <label for="aspectRatio">Aspect Ratio:</label>
+        <input type="number" id="aspectRatio" />
+        <button onclick="calculateWingArea()">Calculate Wing Area</button>
+      </div>
+      <div class="result">
+        <label>Wing Area (m<sup>2</sup>):</label>
+        <span id="wingArea">0</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
